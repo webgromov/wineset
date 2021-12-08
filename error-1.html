@@ -1,356 +1,585 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<title>Wine Set - Персональные данные</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <head>
+    <title>Wine Set - Персональные данные</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
-	<div class="wrapper">
-
-		<header class="header">
-			<div class="header__wrapper">
-				<div class="header__top-container header__anim">
-				<div class="header__top animate__animated animate__fadeInUp">
-					<div class="header__logo">
-						<a href="#"><img src="img/header/logo.svg" alt="logo"></a>
-					</div>
-					<div class="header__search">
-						<div class="search-form">
-							<button type="button" class="search-form__icon _icon-search"></button>
-							<form action="#" class="search-form__item">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Найти напиток..."
-									class="search-form__input">
-								<button type="submit" class="search-form__btn _icon-search"></button>
-							</form>
-						</div>
-					</div>
-					<div data-da=".menu__body, 991, last" class="header__buttons">
-						<a class="header__btn btn"href="#">Оформить заказ</a>
-						<div class="header__callback _icon-arrow-down">Связаться с нами</div>
-					</div>
-					<button type="button" class="icon-menu">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</div>
-				</div>
-				<div class="header__down-container _container">
-					<div class="header__down">
-						<div class="header__menu menu">
-							<nav class="menu__body">
-								<ul data-spollers="991.98,max" data-one-spoller class="menu__list">
-									<li class="menu__item menu__anim">
-										<a href="#" class="menu__link animate__animated animate__fadeIn">Подарочные наборы</a>
-										<button data-spoller type="button" class="menu__arrow _icon-arrow-down animate__animated animate__fadeIn"></button>
-										<ul class="menu__sub-list">
-											<div class="menu__sub-row">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">C бокалами</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">C деликатесами</a>
-												</li>
-											</div>
-										</ul>
-									</li>
-									<li class="menu__item menu__anim">
-										<a href="#" class="menu__link animate__animated animate__fadeIn">Вино и алкоголь</a>
-										<button data-spoller type="button" class="menu__arrow _icon-arrow-down animate__animated animate__fadeIn sl-one"></button>
-										<ul class="menu__sub-list">
-											<div class="menu__sub-row">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Вино</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Игристое</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Шампанское</a>
-												</li>
-											</div>
-											<div class="menu__sub-row">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Виски</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Водка</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Кальвадос</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Ром</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Коньяк</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Другие напитки</a>
-												</li>
-											</div>
-										</ul>
-									</li>
-									<li class="menu__item menu__anim">
-										<a href="#" class="menu__link animate__animated animate__fadeIn">Деликатесы</a>
-										<button data-spoller type="button" class="menu__arrow _icon-arrow-down animate__animated animate__fadeIn"></button>
-										<ul class="menu__sub-list">
-											<div class="menu__sub-row">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Оливки</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Сыры</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Колбасы</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Паштет</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Икра</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Орехи/снеки</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Шоколад</a>
-												</li>
-											</div>
-										</ul>
-									</li>
-									<li class="menu__item menu__anim">
-										<a href="#" class="menu__link animate__animated animate__fadeIn">Бокалы и свечи</a>
-										<button data-spoller type="button" class="menu__arrow _icon-arrow-down animate__animated animate__fadeIn"></button>
-										<ul class="menu__sub-list">
-											<div class="menu__sub-row">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Бокалы вино</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Бокалы шампанки</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Роксы</a>
-												</li>
-											</div>
-											<div class="menu__sub-row">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Свечи</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Нож сомелье</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Палочки для суши</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Нарезочная доска</a>
-												</li>
-											</div>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<div data-da=".header__top, 991.98, 3" class="header__actions actions-header action__anim">
-							<a href="#" class="actions-header__item actions-header__item_favorites _icon-favorite animate__animated animate__fadeInDown"></a>
-							<div class="actions-header__item cart-header">
-								<a href="#" class="cart-header__icon _icon-cart animate__animated animate__fadeInDown"></a>
-								<div class="cart-header__body">
-									<ul class="cart-header__list cart-list"></ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<main class="page">
-
-
-			<section class="page__personal personal">
-				<div class="personal__container _container">
-					<a class="personal__back" href="#">
-						<img src="img/personal/arrow-red-right.svg" alt="back arrow">
-						<p>Вернуться в корзину</p>
-					</a>
-					<h2 class="personal__title">персональные
-						данные</h2>
-					<div class="personal__body">
-						<div class="personal__column-one">
-							<div class="personal__column-inner">
-								<div class="personal__column-name">Получатель</div>
-								<form class="pesonal__column-form" action="#">
-									<div class="personal__column-warning">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя..."
-											class="input personal__column-input">
-										<img src="img/personal/warning.svg" alt="obligatory icon">
-									</div>
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Фамилия..."
-										class="input personal__column-input">
-									<div class="personal__column-warning">
-										<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-											placeholder="Номер телефона..." class="input personal__column-input">
-										<img src="img/personal/warning.svg" alt="obligatory icon">
-									</div>
-									<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Email..."
-										class="input personal__column-input">
-								</form>
-							</div>
-							<div class="personal__column-inner">
-								<div class="personal__column-name">Доставка</div>
-								<form class="pesonal__column-form" action="#">
-									<div class="personal__column-warning">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поле 1..."
-											class="input personal__column-input">
-										<img src="img/personal/warning.svg" alt="obligatory icon">
-									</div>
-									<div class="personal__column-warning">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поле 2..."
-											class="input personal__column-input">
-										<img src="img/personal/warning.svg" alt="obligatory icon">
-									</div>
-									<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Поле 3..."
-										class="input personal__column-input">
-								</form>
-							</div>
-							<div class="personal__column-inner">
-								<div class="personal__column-name">Оплата</div>
-								<form class="pesonal__column-form" action="#">
-									<div class="personal__column-warning">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поле 1..."
-											class="input personal__column-input">
-										<img src="img/personal/warning.svg" alt="obligatory icon">
-									</div>
-									<div class="personal__column-warning">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поле 2..."
-											class="input personal__column-input">
-										<img src="img/personal/warning.svg" alt="obligatory icon">
-									</div>
-									<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Поле 3..."
-										class="input personal__column-input">
-								</form>
-							</div>
-							<div class="personal__column-inner">
-								<div class="personal__column-name">Ваш комментарий</div>
-								<form class="personal__column-form" action="#">
-									<textarea class="personal__colunm-area" placeholder="Ваше сообщение..."></textarea>
-								</form>
-							</div>
-						</div>
-						<div class="personal__column-two">
-							<div class="personal__column-order">
-								<div class="personal__column-section section-column">
-									<div class="section-column__header">
-										<div class="section-column__title">Ваш заказ</div>
-										<a class="section-column__link" href="#">Редактировать</a>
-									</div>
-									<div class="section-column__item">
-										<div class="section-column__info">
-											<div class="section-column__image"><img src="img/personal/wine-butle.png" alt="wine"></div>
-											<div class="section-column__descript">
-												<p>Вино красное сухое</p>
-												<div class="section-column__descript-name">Tenuta argentiera bolgheri superiore</div>
-												<span>Артикул: 126494</span>
-											</div>
-										</div>
-										<div class="section-column__quantity">5 шт. * 4 500 ₽</div>
-									</div>
-									<div class="section-column__item">
-										<div class="section-column__info">
-											<div class="section-column__descript">
-												<div class="section-column__descript-name">Товары</div>
-												<span class="section-column__descript-span">5 товаров</span>
-												<div class="section-column__descript-name">Cкидка</div>
-											</div>
-										</div>
-										<div class="section-column__quantity">
-											<p>22 500 ₽</p>
-											<p><span>- 2 200 ₽</span></p>
-										</div>
-									</div>
-									<div class="section-column__total">
-										<p>Итого</p>
-										<p>20 000 ₽</p>
-									</div>
-									<button class="callback__button personal__btn">Оформить</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</main>
-
-		<footer class="footer">
-  <div class="footer__decor" parallaxed>
-    <img src="img/footer/foooter-wine.png" alt="footer decor">
-  </div>
-  <div class="footer__container _container">
-    <div class="footer__body wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-      <div class="insert__box">
-        <img class="insert__image" src="img/footer/222.jpg" alt="Insert box here">
-        <div class="insert__text">
-          <h4 class="insert__monogram">Sammelier Choise</h4>
-          <h3 class="insert__main">Не уверены в выборе? <br> Мы готовы помочь!</h3>
-          <a class="footer__banner-link" href="#">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__top">
-      <h2 class="footer__title title">Instagram</h2>
-      <a class="footer__link btn-link" href="#">Подписаться</a>
-    </div>
-    <div class="footer__image wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-      <img src="img/footer/01.jpg" alt="photo">
-      <img src="img/footer/02.jpg" alt="photo">
-      <img src="img/footer/03.jpg" alt="photo">
-      <img src="img/footer/04.jpg" alt="photo">
-    </div>
-  </div>
-  <div class="footer__bottom wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-    <div class="footer__container _container">
-      <div class="footer__inner">
-        <div class="footer__logo">
-          <img src="img/header/logo.svg" alt="footer logo">
-        </div>
-        <div class="footer__column">
-          <a class="footer__links" href="">Подарочные наборы</a>
-          <a class="footer__links" href="">Вино и алкоголь</a>
-          <a class="footer__links" href="">Деликатесы</a>
-          <a class="footer__links" href="">Бокалы и свечи</a>
-        </div>
-        <div class="footer__column">
-          <a class="footer__links" href="">Политика приватности</a>
-          <a class="footer__links" href="">Пользовательское соглашение</a>
-        </div>
-        <div class="footer__contacts">
-          <a class="footer__phone _icon-phone" href="tel:1235123123">1235123123, 15121231231</a>
-          <div class="footer__location _icon-location">Москва, проспект Василия Порика, 13​</div>
-          <div class="footer__social">
-            <a href="#"><img src="img/footer/facebook.svg" alt="facebook icon"></a>
-            <a href="#"><img src="img/footer/telegram.svg" alt="telegram icon"></a>
-            <a href="#"><img src="img/footer/instagram.svg" alt="instagram icon"></a>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__top-container header__anim">
+            <div class="header__top animate__animated animate__fadeInUp">
+              <div class="header__logo">
+                <a href="#"><img src="img/header/logo.svg" alt="logo" /></a>
+              </div>
+              <div class="header__search">
+                <div class="search-form">
+                  <button
+                    type="button"
+                    class="search-form__icon _icon-search"
+                  ></button>
+                  <form action="#" class="search-form__item">
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      name="form[]"
+                      placeholder="Найти напиток..."
+                      class="search-form__input"
+                    />
+                    <button
+                      type="submit"
+                      class="search-form__btn _icon-search"
+                    ></button>
+                  </form>
+                </div>
+              </div>
+              <div data-da=".menu__body, 991, last" class="header__buttons">
+                <a class="header__btn btn" href="#">Оформить заказ</a>
+                <div class="header__callback _icon-arrow-down">
+                  Связаться с нами
+                </div>
+              </div>
+              <button type="button" class="icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
-          <button class="footer__btn callback__button">Связаться с нами</button>
+          <div class="header__down-container _container">
+            <div class="header__down">
+              <div class="header__menu menu">
+                <nav class="menu__body">
+                  <ul
+                    data-spollers="991.98,max"
+                    data-one-spoller
+                    class="menu__list"
+                  >
+                    <li class="menu__item menu__anim">
+                      <a
+                        href="#"
+                        class="menu__link animate__animated animate__fadeIn"
+                        >Подарочные наборы</a
+                      >
+                      <button
+                        data-spoller
+                        type="button"
+                        class="
+                          menu__arrow
+                          _icon-arrow-down
+                          animate__animated animate__fadeIn
+                        "
+                      ></button>
+                      <ul class="menu__sub-list">
+                        <div class="menu__sub-row">
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">C бокалами</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">
+                              C деликатесами
+                            </a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">
+                              C деликатесами готовые
+                            </a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">
+                              C деликатесами собрать
+                            </a>
+                          </li>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="menu__item menu__anim">
+                      <a
+                        href="#"
+                        class="menu__link animate__animated animate__fadeIn"
+                        >Вино и алкоголь</a
+                      >
+                      <button
+                        data-spoller
+                        type="button"
+                        class="
+                          menu__arrow
+                          _icon-arrow-down
+                          animate__animated animate__fadeIn
+                          sl-one
+                        "
+                      ></button>
+                      <ul class="menu__sub-list">
+                        <div class="menu__sub-row">
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Вино</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Игристое</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Шампанское</a>
+                          </li>
+                        </div>
+                        <div class="menu__sub-row">
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Виски</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Водка</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Кальвадос</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Ром</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Коньяк</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link"
+                              >Другие напитки</a
+                            >
+                          </li>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="menu__item menu__anim">
+                      <a
+                        href="#"
+                        class="menu__link animate__animated animate__fadeIn"
+                        >Деликатесы</a
+                      >
+                      <button
+                        data-spoller
+                        type="button"
+                        class="
+                          menu__arrow
+                          _icon-arrow-down
+                          animate__animated animate__fadeIn
+                        "
+                      ></button>
+                      <ul class="menu__sub-list">
+                        <div class="menu__sub-row">
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Оливки</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Сыры</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Колбасы</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Паштет</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Икра</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Орехи/снеки</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Шоколад</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="menu__item menu__anim">
+                      <a
+                        href="#"
+                        class="menu__link animate__animated animate__fadeIn"
+                        >Бокалы и свечи</a
+                      >
+                      <button
+                        data-spoller
+                        type="button"
+                        class="
+                          menu__arrow
+                          _icon-arrow-down
+                          animate__animated animate__fadeIn
+                        "
+                      ></button>
+                      <ul class="menu__sub-list">
+                        <div class="menu__sub-row">
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Бокалы вино</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link"
+                              >Бокалы шампанки</a
+                            >
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Роксы</a>
+                          </li>
+                        </div>
+                        <div class="menu__sub-row">
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Свечи</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link">Нож сомелье</a>
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link"
+                              >Палочки для суши</a
+                            >
+                          </li>
+                          <li class="menu__sub-item">
+                            <a href="#" class="menu__sub-link"
+                              >Нарезочная доска</a
+                            >
+                          </li>
+                        </div>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div
+                data-da=".header__top, 991.98, 3"
+                class="header__actions actions-header action__anim"
+              >
+                <a
+                  href="#"
+                  class="
+                    actions-header__item actions-header__item_favorites
+                    _icon-favorite
+                    animate__animated animate__fadeInDown
+                  "
+                ></a>
+                <div class="actions-header__item cart-header">
+                  <a
+                    href="#"
+                    class="
+                      cart-header__icon
+                      _icon-cart
+                      animate__animated animate__fadeInDown
+                    "
+                  ></a>
+                  <div class="cart-header__body">
+                    <ul class="cart-header__list cart-list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </header>
+
+      <main class="page">
+        <section class="page__personal personal">
+          <div class="personal__container _container">
+            <a class="personal__back" href="#">
+              <img src="img/personal/arrow-red-right.svg" alt="back arrow" />
+              <p>Вернуться в корзину</p>
+            </a>
+            <h2 class="personal__title">персональные данные</h2>
+            <div class="personal__body">
+              <div class="personal__column-one">
+                <div class="personal__column-inner">
+                  <div class="personal__column-name">Получатель</div>
+                  <form class="pesonal__column-form" action="#">
+                    <div class="personal__column-warning">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Имя..."
+                        class="input personal__column-input"
+                      />
+                      <img
+                        src="img/personal/warning.svg"
+                        alt="obligatory icon"
+                      />
+                    </div>
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      name="form[]"
+                      data-error="Ошибка"
+                      placeholder="Фамилия..."
+                      class="input personal__column-input"
+                    />
+                    <div class="personal__column-warning">
+                      <input
+                        autocomplete="off"
+                        type="tel"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Номер телефона..."
+                        class="input personal__column-input"
+                      />
+                      <img
+                        src="img/personal/warning.svg"
+                        alt="obligatory icon"
+                      />
+                    </div>
+                    <input
+                      autocomplete="off"
+                      type="email"
+                      name="form[]"
+                      data-error="Ошибка"
+                      placeholder="Email..."
+                      class="input personal__column-input"
+                    />
+                  </form>
+                </div>
+                <div class="personal__column-inner">
+                  <div class="personal__column-name">Доставка</div>
+                  <form class="pesonal__column-form" action="#">
+                    <div class="personal__column-warning">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Поле 1..."
+                        class="input personal__column-input"
+                      />
+                      <img
+                        src="img/personal/warning.svg"
+                        alt="obligatory icon"
+                      />
+                    </div>
+                    <div class="personal__column-warning">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Поле 2..."
+                        class="input personal__column-input"
+                      />
+                      <img
+                        src="img/personal/warning.svg"
+                        alt="obligatory icon"
+                      />
+                    </div>
+                    <input
+                      autocomplete="off"
+                      type="tel"
+                      name="form[]"
+                      data-error="Ошибка"
+                      placeholder="Поле 3..."
+                      class="input personal__column-input"
+                    />
+                  </form>
+                </div>
+                <div class="personal__column-inner">
+                  <div class="personal__column-name">Оплата</div>
+                  <form class="pesonal__column-form" action="#">
+                    <div class="personal__column-warning">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Поле 1..."
+                        class="input personal__column-input"
+                      />
+                      <img
+                        src="img/personal/warning.svg"
+                        alt="obligatory icon"
+                      />
+                    </div>
+                    <div class="personal__column-warning">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Поле 2..."
+                        class="input personal__column-input"
+                      />
+                      <img
+                        src="img/personal/warning.svg"
+                        alt="obligatory icon"
+                      />
+                    </div>
+                    <input
+                      autocomplete="off"
+                      type="tel"
+                      name="form[]"
+                      data-error="Ошибка"
+                      placeholder="Поле 3..."
+                      class="input personal__column-input"
+                    />
+                  </form>
+                </div>
+                <div class="personal__column-inner">
+                  <div class="personal__column-name">Ваш комментарий</div>
+                  <form class="personal__column-form" action="#">
+                    <textarea
+                      class="personal__colunm-area"
+                      placeholder="Ваше сообщение..."
+                    ></textarea>
+                  </form>
+                </div>
+              </div>
+              <div class="personal__column-two">
+                <div class="personal__column-order">
+                  <div class="personal__column-section section-column">
+                    <div class="section-column__header">
+                      <div class="section-column__title">Ваш заказ</div>
+                      <a class="section-column__link" href="#">Редактировать</a>
+                    </div>
+                    <div class="section-column__item">
+                      <div class="section-column__info">
+                        <div class="section-column__image">
+                          <img src="img/personal/wine-butle.png" alt="wine" />
+                        </div>
+                        <div class="section-column__descript">
+                          <p>Вино красное сухое</p>
+                          <div class="section-column__descript-name">
+                            Tenuta argentiera bolgheri superiore
+                          </div>
+                          <span>Артикул: 126494</span>
+                        </div>
+                      </div>
+                      <div class="section-column__quantity">
+                        5 шт. * 4 500 ₽
+                      </div>
+                    </div>
+                    <div class="section-column__item">
+                      <div class="section-column__info">
+                        <div class="section-column__descript">
+                          <div class="section-column__descript-name">
+                            Товары
+                          </div>
+                          <span class="section-column__descript-span"
+                            >5 товаров</span
+                          >
+                          <div class="section-column__descript-name">
+                            Cкидка
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section-column__quantity">
+                        <p>22 500 ₽</p>
+                        <p><span>- 2 200 ₽</span></p>
+                      </div>
+                    </div>
+                    <div class="section-column__total">
+                      <p>Итого</p>
+                      <p>20 000 ₽</p>
+                    </div>
+                    <button class="callback__button personal__btn">
+                      Оформить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__decor" parallaxed>
+          <img src="img/footer/foooter-wine.png" alt="footer decor" />
+        </div>
+        <div class="footer__container _container">
+          <div
+            class="footer__body wow animate__animated animate__fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0s"
+          >
+            <div class="insert__box">
+              <img
+                class="insert__image"
+                src="img/footer/222.jpg"
+                alt="Insert box here"
+              />
+              <div class="insert__text">
+                <h4 class="insert__monogram">Sammelier Choise</h4>
+                <h3 class="insert__main">
+                  Не уверены в выборе? <br />
+                  Мы готовы помочь!
+                </h3>
+                <a class="footer__banner-link" href="#"
+                  >ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__top">
+            <h2 class="footer__title title">Instagram</h2>
+            <a class="footer__link btn-link" href="#">Подписаться</a>
+          </div>
+          <div
+            class="footer__image wow animate__animated animate__fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0s"
+          >
+            <img src="img/footer/01.jpg" alt="photo" />
+            <img src="img/footer/02.jpg" alt="photo" />
+            <img src="img/footer/03.jpg" alt="photo" />
+            <img src="img/footer/04.jpg" alt="photo" />
+          </div>
+        </div>
+        <div
+          class="footer__bottom wow animate__animated animate__fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0s"
+        >
+          <div class="footer__container _container">
+            <div class="footer__inner">
+              <div class="footer__logo">
+                <img src="img/header/logo.svg" alt="footer logo" />
+              </div>
+              <div class="footer__column">
+                <a class="footer__links" href="">Подарочные наборы</a>
+                <a class="footer__links" href="">Вино и алкоголь</a>
+                <a class="footer__links" href="">Деликатесы</a>
+                <a class="footer__links" href="">Бокалы и свечи</a>
+              </div>
+              <div class="footer__column">
+                <a class="footer__links" href="">Политика приватности</a>
+                <a class="footer__links" href="">Пользовательское соглашение</a>
+              </div>
+              <div class="footer__contacts">
+                <a class="footer__phone _icon-phone" href="tel:1235123123"
+                  >1235123123, 15121231231</a
+                >
+                <div class="footer__location _icon-location">
+                  Москва, проспект Василия Порика, 13​
+                </div>
+                <div class="footer__social">
+                  <a href="#"
+                    ><img src="img/footer/facebook.svg" alt="facebook icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="img/footer/telegram.svg" alt="telegram icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="img/footer/instagram.svg" alt="instagram icon"
+                  /></a>
+                </div>
+                <button class="footer__btn callback__button">
+                  Связаться с нами
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__label">Cегодня у нас купили 21 товар!</div>
+      </footer>
     </div>
-  </div>
-  <div class="footer__label">Cегодня у нас купили 21 товар!</div>
-</footer>
-	</div>
-	<!-- <div class="popup popup_popup">
+    <!-- <div class="popup popup_popup">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__logo">
@@ -382,7 +611,7 @@
 		</div>
 	</div>
 </div> -->
-<!-- <div class="popup popup_video">
+    <!-- <div class="popup popup_video">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close popup__close_video"></div>
@@ -391,78 +620,102 @@
 	</div>
 </div> -->
 
-<div class="popup popup_contact">
-	<div class="popup_contact__container _container">
-		<div class="popup_contact-body">
-			<div class="popup_contact-header">
-				<span>Контакты</span>
-				<div class="popup__close">
-					<img src="img/icons/popup-contacts/close.svg" alt="close icon">
-				</div>
-			</div>
-			<div class="popup_contact-item item-contact">
-				<div class="item-contact__adress">
-					<span>Адрес:</span> г. Москва, ул. Нарвская, 1а, к.2
-				</div>
-				<div class="item-contact__phone">
-					<span>Телефон: </span><a href="tel:79197860276">+79197860276, +79689481268</a>
-				</div>
-				<div class="item-contact__mail">
-					<span>Email: </span><a href="mailto:zakaz@wineset.ru">zakaz@wineset.ru</a>
-				</div>
-			</div>
-			<div class="popup_contact-map map">
-				<div class="map__body">
-					<div style="width: 100%"><iframe width="100%" height="177px" frameborder="0" scrolling="no" marginheight="0"
-							marginwidth="0"
-							src="https://maps.google.com/maps?width=100%25&amp;height=571&amp;hl=ru&amp;q=1422%201st%20St.Napa,%20CA%2094559+(White%20Rock%20Restaurant)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-								href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
-				</div>
-			</div>
-			<div class="popup_contact-social social-contact">
-				<div class="social-contact__link">
-					<a href="#"><img src="img/icons/popup-contacts/insta.svg" alt="instagram icon"></a>
-					<a href="#"><img src="img/icons/popup-contacts/teleg.svg" alt="telegram icon"></a>
-					<a href="#"><img src="img/icons/popup-contacts/face.svg" alt="facebook icon"></a>
-				</div>
-			</div>
-			<div class="popup_contact-buttom">
-				<buttom type="submit" class="popup_contact-btn btn">Узнать больше</buttom>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="popup popup_contact">
+      <div class="popup_contact__container _container">
+        <div class="popup_contact-body">
+          <div class="popup_contact-header">
+            <span>Контакты</span>
+            <div class="popup__close">
+              <img src="img/icons/popup-contacts/close.svg" alt="close icon" />
+            </div>
+          </div>
+          <div class="popup_contact-item item-contact">
+            <div class="item-contact__adress">
+              <span>Адрес:</span> г. Москва, ул. Нарвская, 1а, к.2
+            </div>
+            <div class="item-contact__phone">
+              <span>Телефон: </span
+              ><a href="tel:79197860276">+79197860276, +79689481268</a>
+            </div>
+            <div class="item-contact__mail">
+              <span>Email: </span
+              ><a href="mailto:zakaz@wineset.ru">zakaz@wineset.ru</a>
+            </div>
+          </div>
+          <div class="popup_contact-map map">
+            <div class="map__body">
+              <div style="width: 100%">
+                <iframe
+                  width="100%"
+                  height="177px"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=571&amp;hl=ru&amp;q=1422%201st%20St.Napa,%20CA%2094559+(White%20Rock%20Restaurant)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe
+                >
+              </div>
+            </div>
+          </div>
+          <div class="popup_contact-social social-contact">
+            <div class="social-contact__link">
+              <a href="#"
+                ><img
+                  src="img/icons/popup-contacts/insta.svg"
+                  alt="instagram icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/icons/popup-contacts/teleg.svg"
+                  alt="telegram icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/icons/popup-contacts/face.svg"
+                  alt="facebook icon"
+              /></a>
+            </div>
+          </div>
+          <div class="popup_contact-buttom">
+            <buttom type="submit" class="popup_contact-btn btn"
+              >Узнать больше</buttom
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="popup cart--popup">
-	<!-- <div class="popup_contact__container cart--popup__container _container"> -->
-		<div class="popup_contact-body cart--popup__body">
-			<div class="popup_contact-header cart--popup__header">
-				<span>Ваша корзина</span>
-				<div class="popup__close">
-					<img src="img/icons/popup-contacts/close.svg" alt="close icon">
-				</div>
-			</div>
-			<div class="cart--popup__wrapper">
-				<div class="cart--popup__products">
-				</div>
-				<div class="cart--popup__footer">
-					<div class="cart--popup__footer-inner">
-						<div class="cart--popup__footer-title">Итого</div>
-						<div class="cart--popup__footer-price">
-						</div>
-					</div>
-				</div>
-				<div class="cart--popup__footer-info">Важная и не очень информация по поводу доставки</div>
-				<div class="popup_contact-buttom">
-					<buttom type="buttom" class="popup_contact-btn cart--popup__btn">Оформить заказ</buttom>
-				</div>
-			</div>
-		</div>
-	<!-- </div> -->
-</div>
-	<script src="js/vendors.min.js"></script>
-<script src="js/app.min.js"></script>
-
-</body>
-
+    <div class="popup cart--popup">
+      <!-- <div class="popup_contact__container cart--popup__container _container"> -->
+      <div class="popup_contact-body cart--popup__body">
+        <div class="popup_contact-header cart--popup__header">
+          <span>Ваша корзина</span>
+          <div class="popup__close">
+            <img src="img/icons/popup-contacts/close.svg" alt="close icon" />
+          </div>
+        </div>
+        <div class="cart--popup__wrapper">
+          <div class="cart--popup__products"></div>
+          <div class="cart--popup__footer">
+            <div class="cart--popup__footer-inner">
+              <div class="cart--popup__footer-title">Итого</div>
+              <div class="cart--popup__footer-price"></div>
+            </div>
+          </div>
+          <div class="cart--popup__footer-info">
+            Важная и не очень информация по поводу доставки
+          </div>
+          <div class="popup_contact-buttom">
+            <buttom type="buttom" class="popup_contact-btn cart--popup__btn"
+              >Оформить заказ</buttom
+            >
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

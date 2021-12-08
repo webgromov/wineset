@@ -225,6 +225,10 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
+
+
+
+
 if (document.querySelector('.slider-main__body')) {
 	new Swiper('.slider-main__body', {
 		observer: true,
@@ -295,6 +299,64 @@ if (document.querySelector('.partners__body')) {
 	});
 }
 
+
+if (document.querySelector('.box-take__slider')){
+	new Swiper('.box-take__slider', {
+		observer: true,
+		observeParents: true,
+		watchOverflow: true,
+		simulateTouch: true,
+		iOSEdgeSwipeDetection: true,
+		passiveListeners: true,
+		slidesPerView: 2,
+		spaceBetween: 124,
+		speed: 500,
+		loop: true,
+		preloadImages: false,
+		breakpoints: {
+			300: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+				autoHeight: true,
+			},
+			// when window width is >= 320px
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+			},
+			// when window width is >= 768px
+			768: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			// when window width is >= 992px
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 50,
+				// slidesPerView: 'auto', //выставлять ширину слайда в css
+				// centeredSlides: true, // center
+			},
+		}
+})}
+
+
+// if(document.querySelector('.wineglass__inner')){
+// 	new Swiper ('.product-slider', {
+// 		observer: true,
+// 		observeParents: true,
+// 		watchOverflow: true,
+// 		simulateTouch: true,
+// 		iOSEdgeSwipeDetection: true,
+// 		passiveListeners: true,
+// 		slidesPerView: "auto",
+// 		spaceBetween: 124,
+// 		speed: 500,
+// 		loop: true,
+// 		preloadImages: false,
+// 	})
+// }
+
+
 if (document.querySelector('.gift-slider__body')) {
 	new Swiper('.gift-slider__body', {
 		observer: true,
@@ -322,12 +384,12 @@ if (document.querySelector('.gift-slider__body')) {
 		breakpoints: {
 			300: {
 				slidesPerView: 1,
-				spaceBetween: 15
+				spaceBetween: 40,
 			},
 			// when window width is >= 320px
 			320: {
 				slidesPerView: 1,
-				spaceBetween: 15,
+				spaceBetween: 40,
 			},
 			// when window width is >= 768px
 			768: {
@@ -1985,6 +2047,45 @@ window.onload = function () {
 		$('#msb4s').toggleClass('_active');
 	});
 
+
+	// Скрывем фильтр при скролле 
+
+	var options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+}
+const handleFilters = function(entries, observer) {
+	entries.map(entry=>{
+		console.log(entry.isIntersecting);
+		if(!entry.isIntersecting){
+			console.log(entry.target);
+			entry.target.classList.remove('_active')
+		}
+	})
+};
+
+
+
+const observer = new IntersectionObserver(handleFilters, options);
+const activeElements = document.querySelectorAll('.observed');
+
+activeElements.forEach(elem=>{
+	console.log(elem)
+	return observer.observe(elem)
+})
+
+	// $(window).on('scroll', () => { // По скроллу страници запускаеть функия
+	// 	// В первую переменную мы получаем координаты относительно верха блока который нам нужен
+	// 	// Во вторую мы получаем вертикальную позиицию скролла окна браузера
+	// 		const blockPosition = $('#fs').offset().top;
+	// 		const	windowScrollPosition = $(window).scrollTop();
+				
+	// 		if( blockPosition < windowScrollPosition || blockPosition > windowScrollPosition) {
+	// 				console.log('ok'); 
+	// 		}
+	// });
+
 	// Header
 	const headerElement = document.querySelector('.header');
 
@@ -2047,7 +2148,7 @@ window.addEventListener('load', () => {
 				}
 			})
 		})
-	}, 100)  // вместо 1000
+	}, 600)  // вместо 1000
 })
 let scr_body = document.querySelector('body');
 let scr_blocks = document.querySelectorAll('._scr-sector');
