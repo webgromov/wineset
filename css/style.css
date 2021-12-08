@@ -8585,7 +8585,13 @@ body.ie ._ibg img {
   }
 
   .box-number {
-    display: none;
+    position: absolute;
+    top: -65px;
+    
+  }
+
+  .box-number img {
+    max-width: 60%;
   }
 
   .box-take {
