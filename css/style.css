@@ -8308,6 +8308,12 @@ body.ie ._ibg img {
     line-height: 120.8333333333%;
   }
 
+  .footer__title { 
+    padding: 0;
+  }
+
+
+
   .header__top-container {
     padding: 0 15px;
   }
@@ -9006,7 +9012,8 @@ body.ie ._ibg img {
 
   .footer__top {
     /* margin-bottom: calc(0px + 50 * ((100vw - 320px) / 1310)); */
-  }
+    margin-bottom: 30px;
+  } 
 
   .footer__image {
     margin-bottom: calc(35px + 105 * ((100vw - 320px) / 1310));
@@ -11398,8 +11405,7 @@ body.ie ._ibg img {
   }
 
   .footer__top {
-    /* margin-bottom: 25px; */
-    margin-bottom: 0;
+    margin-bottom: 30px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
