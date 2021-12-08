@@ -322,12 +322,10 @@ if (document.querySelector('.box-take__slider')){
 			// when window width is >= 320px
 			320: {
 				slidesPerView: 1,
-				spaceBetween: 15,
 			},
 			// when window width is >= 768px
 			768: {
-				slidesPerView: 1,
-				spaceBetween: 10,
+				slidesPerView: 3,
 			},
 			// when window width is >= 992px
 			992: {
@@ -2050,30 +2048,29 @@ window.onload = function () {
 
 	// Скрывем фильтр при скролле 
 
-	var options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1.0
-}
-const handleFilters = function(entries, observer) {
-	entries.map(entry=>{
-		console.log(entry.isIntersecting);
-		if(!entry.isIntersecting){
-			console.log(entry.target);
-			entry.target.classList.remove('_active')
-		}
-	})
-};
+// 	var options = {
+//     // root:  document.body,
+//     rootMargin: '0px',
+//     threshold: 1.0
+// }
 
+// 	const handleFilters = function(entries, observer) {
 
+// 		entries.map(entry=>{
+// 			console.log(entry);
+// 			if(!entry.isIntersecting){
+// 				entry.target.classList.remove('_active')
+// 			}
+// 			return;
+// 		})
+// 	};
 
-const observer = new IntersectionObserver(handleFilters, options);
-const activeElements = document.querySelectorAll('.observed');
+// 	const observer = new IntersectionObserver(handleFilters, options);
+// 	const activeElements = document.querySelectorAll('.observed');
 
-activeElements.forEach(elem=>{
-	console.log(elem)
-	return observer.observe(elem)
-})
+// 	activeElements.forEach(elem=>{
+// 		return observer.observe(elem)
+// 	})
 
 	// $(window).on('scroll', () => { // По скроллу страници запускаеть функия
 	// 	// В первую переменную мы получаем координаты относительно верха блока который нам нужен
@@ -2087,18 +2084,18 @@ activeElements.forEach(elem=>{
 	// });
 
 	// Header
-	const headerElement = document.querySelector('.header');
+	// const headerElement = document.querySelector('.header');
 
-	const callback = function (entries, observer) {
-		if (entries[0].isIntersecting) {
-			headerElement.classList.remove('_scroll');
-		} else {
-			headerElement.classList.add('_scroll');
-		}
-	};
+	// const callback = function (entries, observer) {
+	// 	if (entries[0].isIntersecting) {
+	// 		headerElement.classList.remove('_scroll');
+	// 	} else {
+	// 		headerElement.classList.add('_scroll');
+	// 	}
+	// };
 
-	const headerObserver = new IntersectionObserver(callback);
-	headerObserver.observe(headerElement);
+	// const headerObserver = new IntersectionObserver(callback);
+	// headerObserver.observe(headerElement);
 }
 
 // WOW
