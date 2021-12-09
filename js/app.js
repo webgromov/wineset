@@ -307,6 +307,7 @@ if (document.querySelector('.box-take__slider')){
 		watchOverflow: true,
 		simulateTouch: true,
 		iOSEdgeSwipeDetection: true,
+		autoHeight: true,
 		passiveListeners: true,
 		slidesPerView: 2,
 		spaceBetween: 124,
@@ -317,7 +318,6 @@ if (document.querySelector('.box-take__slider')){
 			300: {
 				slidesPerView: 1,
 				spaceBetween: 15,
-				autoHeight: true,
 			},
 			// when window width is >= 320px
 			320: {
@@ -325,7 +325,8 @@ if (document.querySelector('.box-take__slider')){
 			},
 			// when window width is >= 768px
 			768: {
-				slidesPerView: 3,
+				slidesPerView: 2,
+				spaceBetween: 50,
 			},
 			// when window width is >= 992px
 			992: {
@@ -429,30 +430,16 @@ if (document.querySelector('.recomed-slider__body')) {
 			prevEl: '.recomed-slider .slider-arrow_prevv',
 		},
 		breakpoints: {
-			300: {
-				slidesPerView: 2,
-				spaceBetween: 5
-			},
-			350: {
+			320: {
 				slidesPerView: 2,
 				spaceBetween: 10
 			},
-			400: {
-				slidesPerView: 2,
-				spaceBetween: 10
+
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 10,
 			},
-			450: {
-				slidesPerView: 1.1,
-				spaceBetween: 5
-			},
-			610: {
-				slidesPerView: 2.5,
-				spaceBetween: 2
-			},
-			892: {
-				slidesPerView: 2.5,
-				spaceBetween: 20
-			},
+
 			1360: {
 				slidesPerView: 3.5,
 				spaceBetween: 40
