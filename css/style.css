@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 @font-face {
@@ -5228,9 +5235,15 @@ body.ie ._ibg img {
 }
 
 .product-box__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .michael__product .product-box__image img {
@@ -6124,7 +6137,8 @@ body.ie ._ibg img {
 
 .gift-slider__image img {
   width: 100%;
-  object-fit:  cover;
+  -o-object-fit:  cover;
+     object-fit:  cover;
 }
 
 .gift-slider__text {
@@ -6372,6 +6386,7 @@ body.ie ._ibg img {
 .wineglass__inner {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   place-items: center;
@@ -9853,6 +9868,7 @@ body.ie ._ibg img {
   }
   
   .wineglass__inner {
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
   .product-box__slide {
@@ -10941,8 +10957,12 @@ body.ie ._ibg img {
 
 
   .box-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     margin-bottom: 20px;
     position:  static !important;
   }
@@ -11044,6 +11064,7 @@ body.ie ._ibg img {
   }
 
   .wineglass__inner {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2 , 1fr);
   }
 }
@@ -11941,6 +11962,7 @@ body.ie ._ibg img {
 
 
   .wineglass__inner {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -12406,7 +12428,9 @@ body.ie ._ibg img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -12808,6 +12832,7 @@ body.ie ._ibg img {
   }
 
   .wineglass__inner {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -14286,6 +14311,7 @@ body.ie ._ibg img {
     top: 90%;
   }
   .wineglass__inner {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   .product-box {
