@@ -417,7 +417,7 @@ if (document.querySelector('.recomed-slider__body')) {
 		observer: true,
 		observeParents: true,
 		slidesPerView: 4,
-		spaceBetween: 0,
+		spaceBetween: 40,
 		watchOverflow: true,
 		// autoHeight: true,
 		speed: 800,
@@ -431,22 +431,31 @@ if (document.querySelector('.recomed-slider__body')) {
 		},
 		breakpoints: {
 			320: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+			380: {
 				slidesPerView: 2,
-				spaceBetween: 10
+				spaceBetween: 20,
 			},
-
 			768: {
-				slidesPerView: 3,
-				spaceBetween: 10,
+				slidesPerView: 2,
+				spaceBetween: 20,
 			},
-
+			992: {
+				spaceBetween: 40,
+				slidesPerView: 2,
+			},
+			1100: {
+				slidesPerView: 3,
+			},
 			1360: {
-				slidesPerView: 3.5,
-				spaceBetween: 40
+				spaceBetween: 40,
+				slidesPerView: 4,
 			},
 			1440: {
 				slidesPerView: 4,
-				spaceBetween: 0
+				spaceBetween: 40,
 			},
 		}
 	});
@@ -2578,3 +2587,81 @@ function scroll_animate(event) {
 	//If native scroll
 	//disableScroll();
 }
+
+var productionThumbs = new Swiper(".production__thumbs", {
+	spaceBetween: 10,
+	slidesPerView: 3,
+	watchSlidesProgress: true,
+	watchOverflow: true,
+	watchSlidesVisibility: true,
+	centeredSlides: true,
+  centeredSlidesBounds: true,
+	breakpoints: {
+		// 320: {
+		// 	direction: "vertical",
+		// },
+		1100: {
+			direction: "vertical",
+		}
+	}
+});
+var productionImage = new Swiper(".production__image ", {
+	spaceBetween: 10,
+	watchOverflow: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+	thumbs: {
+		swiper: productionThumbs,
+	},
+});
+
+var reviewsBody = new Swiper(".reviews__body ", {
+	watchOverflow: true,
+	simulateTouch: true,
+	iOSEdgeSwipeDetection: true,
+	passiveListeners: true,
+	speed: 500,
+	loop: true,
+	preloadImages: false,
+	breakpoints: {
+		300: {
+			slidesPerView: 1,
+			spaceBetween: 40,
+		},
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 40,
+		},
+		// when window width is >= 768px
+		768: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+		// when window width is >= 992px
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			// slidesPerView: 'auto', //выставлять ширину слайда в css
+			// centeredSlides: true, // center
+		},
+		1112: {
+			slidesPerView: 4,
+			spaceBetween: 40,
+			// slidesPerView: 'auto', //выставлять ширину слайда в css
+			// centeredSlides: true, // center
+		},
+	}
+})
+
+$('button[data-action="close"]').on('click', function () {
+		$('div[data-modal="age"]').removeClass('active')
+})
+
+$('button[data-open="reviews"]').on('click', function () {
+	$('div[data-modal="review"]').addClass('active')
+})
+
+$('modal-review__btn').on('click', function () {
+	$('div[data-modal="review"]').removeClass('active')
+})

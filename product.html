@@ -18,7 +18,7 @@
 	</div>
 
 	
-	<div class="wrapper">
+	<div class="wrapper wrapper_production">
 
 		<!-- <header class="header">
 			<div class="header__wrapper">
@@ -403,13 +403,31 @@
 							</div>
 							<h2 class="production__title">Вино Tenuta Argentiera Bolgheri Superiore</h2>
 							<div class="production__item">
-								<div data-da=".production__cart, 1230, last" class="production__picture">
-									<img src="img/production/01.jpg" alt="image">
-									<img src="img/production/02.jpg" alt="image">
-									<img src="img/production/03.jpg" alt="image">
+								<div class="production__thumbs swiper ">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/production/01.jpg" alt="image">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/production/02.jpg" alt="image">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/production/03.jpg" alt="image">
+										</div>
+									</div>
 								</div>
-								<div class="production__image">
-									<img src="img/production/main-product.png" alt="product image">
+								<div class="production__image swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/production/main-product.png" alt="product image">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/production/main-product.png" alt="product image">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/production/main-product.png" alt="product image">
+										</div>
+									</div>
 								</div>
 								<div class="production__wrapper">
 									<div class="production__wineset">
@@ -547,10 +565,11 @@
 				<div class="reviews__container">
 					<div class="reviews__top">
 						<div class="reviews__title">Все отзывы (21)</div>
-						<button type="submit" class="reviews__btn">Добавить отзыв</button>
+						<button type="submit" class="reviews__btn" data-open="reviews">Добавить отзыв</button>
 					</div>
 				</div>
-				<div class="reviews__body">
+				<div class="reviews__body _swiper">
+
 					<div class="reviews__item">
 						<div class="reviews__avatar">
 							<img src="img/production/avatar.jpg" alt="avatar">
@@ -857,15 +876,15 @@
 			<div class="popup__close-message"></div>
 		</div>
 	</div>
-</div> -->
-<!-- <div class="popup popup_video">
+</div> 
+ <div class="popup popup_video">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close popup__close_video"></div>
 			<div class="popup__video _video"></div>
 		</div>
 	</div>
-</div> -->
+</div> 
 
 <div class="popup popup_contact">
 	<div class="popup_contact__container _container">
@@ -906,6 +925,36 @@
 				<buttom type="submit" class="popup_contact-btn btn">Узнать больше</buttom>
 			</div>
 		</div>
+	</div>
+</div> -->
+
+<div class="modal" data-modal="review">
+	<div class="modal-body modal-review">
+		<div class="modal-review__title">
+			Добавить отзыв
+		</div>
+		<form class="modal-review__form">
+			<div class="modal-review__input">
+					<input type="text" placeholder="Введите своe имя...">
+			</div>
+			<div class="rating__body">
+				<div class="rating__active"></div>
+				<div class="rating__items">
+					<input type="radio" class="rating__item" value="1" name="rating">
+					<input type="radio" class="rating__item" value="2" name="rating">
+					<input type="radio" class="rating__item" value="3" name="rating">
+					<input type="radio" class="rating__item" value="4" name="rating">
+					<input type="radio" class="rating__item" value="5" name="rating">
+				</div>
+			</div>
+	
+			
+
+			<div class="modal-review__textarea">
+				<textarea cols="30" rows="10" placeholder="Ваш комментарий..."></textarea>
+			</div>
+			<button type="submit" class="modal-review__btn">Отправить</button>
+		</form>
 	</div>
 </div>
 
@@ -997,7 +1046,7 @@
 		</div>
 	</div>
 </div>
-	<script src="js/vendors.min.js"></script>
+<script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
